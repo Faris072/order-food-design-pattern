@@ -34,7 +34,7 @@ export default class OrderContext {
 		this?.orders?.value?.forEach((val:IProduct, i) => {
 			let indexOrder = orders?.findIndex(order => order?.id == val?.id);
 			if(indexOrder == -1){
-				orders?.push({...val, ...{qty: 0}});
+				orders?.push({...val, ...{qty: 1}});
 			}
 			else {
 				orders[indexOrder].qty++;

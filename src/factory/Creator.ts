@@ -5,5 +5,9 @@ export default abstract class Creator {
 		return (Math.random()*10_000)?.toFixed(0);
 	}
 
-	abstract create(name: IProduct['name'], description: IProduct['description'], price: IProduct['price'], imageUrl?: IProduct['imageUrl']): IProduct;
+	abstract create(name: IProduct['name'], 
+		description: IProduct['description'], 
+		price: IProduct['price'], 
+		imageUrl?: IProduct['imageUrl']
+	): IProduct;
 }

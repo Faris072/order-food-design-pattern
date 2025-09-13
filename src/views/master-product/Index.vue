@@ -26,7 +26,7 @@
 				<tbody>
 					<template v-for="(product, index) in productContext?.getAllProducts()">
 						<tr>
-							<td class="text-center">1</td>
+							<td class="text-center">{{ index+1 }}</td>
 							<td class="w-20">
 								<div class="w-full flex justify-center">
 									<img v-if="product?.imageUrl" :src="product?.imageUrl" class="w-10 h-10 rounded-full object-cover">

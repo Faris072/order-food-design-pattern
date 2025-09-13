@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "build-only": "vite build",
     "type-check": "vue-tsc --build",
-    "tailwind": "tailwindcss -i ./src/assets/input.css -o ./src/assets/output.css --watch"
+    "tailwind": "tailwindcss -i ./src/assets/css/input.css -o ./src/assets/css/output.css --watch"
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.1.7",
